@@ -54,6 +54,8 @@ body{
 
 .container .clip:hover{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    /* clip-path: polygon(50% 0%, 7% 82%, 90% 58%); */
+
 
 }
 
