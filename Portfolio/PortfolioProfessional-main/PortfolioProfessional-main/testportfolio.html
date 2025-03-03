@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        /* media queries */
+        /* For small screens (mobiles) */
+        @media (max-width: 768px) {
+            .header {
+                height: 120px;
+            }
+            /* Other styles... */
+        }
+
+        /* For medium screens (tablets) */
+        @media (max-width: 1024px) {
+            .header {
+                height: 130px;
+            }
+            /* Other styles... */
+        }
+
+        /* For large screens (desktops) */
+        @media (min-width: 1025px) {
+            .header {
+                height: 150px;
+            }
+            /* Other styles... */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            width: 100%;
+            height: 150px;
+            margin: 5px;
+            position: sticky; /* This makes the header sticky */
+            top: 0; /* This sets the position from the top of the viewport */
+            background-color: #4e9f9f;
+            opacity: 0.95;
+            border-radius: 30px;
+        }
+
+        /* Other styles... */
+   
+      
+
+/* For medium screens (tablets) */
+@media (max-width: 1024px) {
+    .header {
+        height: 130px;
+    }
+
+    .pic {
+        width: 70px;
+        height: 70px;
+        top: 20px;
+        left: 20px;
+    }
+
+    .name {
+        top: 20px;
+        left: 100px;
+        font-size: 22px;
+    }
+
+    .nav {
+        width: 70%;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .div2 {
+        flex-direction: row;
+    }
+
+    .section1, .section2 {
+        width: 48%;
+    }
+
+    .logos img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* For large screens (desktops) */
+@media (min-width: 1025px) {
+    .header {
+        height: 150px;
+    }
+
+    .pic {
+        width: 80px;
+        height: 80px;
+    }
+
+    .name {
+        font-size: 26px;
+    }
+
+    .nav {
+        width: 50%;
+        top: 40px;
+        left: 45%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .section1, .section2 {
+        width: 60%;
+    }
+
+    .logos img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+        /* css of skill page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.skill {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s;
+}
+.skill:hover {
+    transform: scale(1.05);
+}
+.skill img {
+    width: 50px;
+    height: 50px;
+}
+.skill h3 {
+    margin: 10px 0;
+}
+.status-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 10px;
+    position: relative;
+}
+.status {
+    background-color: #4caf50;
+    height: 100%;
+    width: 90%; /* Change this value for different percentages */
+    border-radius: 5px;
+    transition: width 0.5s;
+}
+.description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+h1 {
+    text-align: left;
+    padding-left: 20px; /* Adjust padding as needed */
+    color: #4CAF50; /* Change to desired color */
+    font-size: 2.5em; /* Change to desired size */
+    font-family: 'Arial', sans-serif; /* Change to desired font family */
+
+}
+
+
+
+
+
+/* css of home pag */
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+           
+           
+        }
+
+        .header {
+           
+            width: 100%;
+            height: 150px;
+            margin: 5px;
+            /* position: relative; */
+            background-color: #4e9f9f;
+            opacity: 0.95;
+            border-radius: 30px;
+            position: -webkit-sticky; /* For Safari */
+            position: sticky
+           
+           
+        }
+
+
+
+        .pic {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            top: 30px;
+            left: 20px;
+            border-radius: 50%;
+        }
+
+        .name {
+            position: absolute;
+            top: 30px;
+            left: 120px;
+            color: silver;
+            font-size: 26px;
+            font-weight: bold;
+            text-shadow: 4px 5px 2px green;
+        }
+
+        .nav {
+            position: absolute;
+            height: 60px;
+            width: 50%;
+            top: 40px;
+            left: 45%;
+            background-color: #86dad0;
+            border-radius: 40px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            opacity: 9;
+            padding: 10px 20px;
+           
+          
+        }
+
+        .navdiv {
+            display: flex;
+            gap: 68px;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+           
+        
+        }
+
+        .id {
+            padding: 10px 20px;
+            background-color: #178170c3;
+            border-radius: 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .id:hover {
+            background-color: #1b5e20;
+            transform: scale(1.1);
+        }
+
+        .div2 {
+            width: 100%;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .section1 {
+            width: 60%;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section2 {
+            width: 35%;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section3 {
+            width: 100%;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .linktext {
+            font-size: 20px;
+            font-weight: bold;
+            color: #00796b;
+        }
+
+        .logos {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .logos img {
+            width: 40px;
+            height: 40px;
+            opacity: 0.8;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .logos img:hover {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+
+        h5 {
+            font-size: 22px;
+            color: #00796b;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+
+
+/* css of projects section */
+
+
+ /* Internal CSS */
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        
+        .project-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 60px;
+            margin-top: 20px;
+            margin-left: -120px;
+        }
+        
+        .project-card {
+            margin: 20px;
+            width: 400px;
+            height: 300px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            background-color: #fff;
+            overflow: hidden;
+            margin-top: 100px;
+        }
+        
+        .project-card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .project-card img {
+            width: 100%;
+            height: 110px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+        .project-card .project-info {
+            padding: 20px;
+            color: #333;
+        }
+        
+        .project-card .project-info h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #00698f;
+        }
+        
+        .project-card .project-info p {
+            font-size: 16px;
+            color: #666;
+        }
+        
+        .project-card .project-btn {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+        .project-card .project-btn:hover {
+            background-color: #3e8e41;
+        }
+        
+        /* Animations */
+        .project-card {
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+        /* .h{
+            left: -100px;
+        } */
+
+        /* contact informaking page  css */
+        /*
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, #d4fc79, #96e6a1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+            */
+        .container {
+            display: flex;
+            margin-left: 45px;
+            margin-bottom: 10px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            /* max-width: 600px; */
+            width: 89%;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .contact-info {
+            flex: 1;
+            padding-top: 70px;
+            padding-right: 30px;
+            font-size: 1em;
+            color: #333;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+        .contact-form {
+            flex: 1;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #66bb6a;
+            border-radius: 6px;
+            font-size: 0.95em;
+            transition: 0.3s;
+        }
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #388e3c;
+            outline: none;
+        }
+        .contact-form button {
+            background: #66bb6a;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+            font-size: 1em;
+            transition: 0.3s;
+            width: 100%;
+        }
+        .contact-form button:hover {
+            background: #388e3c;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    
+    
+
+
+
+
+
+
+
+        .h11 {
+            text-align: left;
+            padding-left: 20px;  /*Adjust padding as needed */
+            color: #4CAF50; /* Change to desired color */
+            font-size: 2.5em; /* Change to desired size */
+            font-family: 'Arial', sans-serif; /* Change to desired font family */
+            }
+    </style>
+</head>
+<body>
+
+    <!-- header page html -->
+    <!-- <div class="main"> -->
+        <header class="header">
+            <div class="pic">
+                <img src="profile-pic (1).png" width="100%" height="100%" alt="img not loaded">
+            </div>
+            <div class="name">
+                <h1>Developer</h1>
+            </div>
+            <nav class="nav">
+                <div class="navdiv">
+                    <a href="#about" class="id">About</a>
+                    <a href="#skills" class="id">skills</a>
+                    <a href="#projects" class="id">projects</a>
+                    <a href="#contact" class="id">contact</a>
+                </div>
+            </nav>
+        </header>
+
+       
+
+        <!-- home page html -->
+         <!-- html code for about page -->
+        <div class="div2" id="about">
+            <section class="section1">
+                <h5>Welcome to my Portfolio</h5>
+                <h1>Hi, I'm <span style="color: #00796b;">Abdul Fattah</span><br>a Web Developer</h1>
+                <p>
+                    I am, a passionate software developer and web designer with a deep interest in creating innovative and efficient solutions. With a strong foundation in Java and front-end web development, I bring both technical expertise and creativity to my work.
+                    
+                    As a Software Developer, I specialize in Java, leveraging its powerful features to build scalable and reliable applications. Over the years, I have gained hands-on experience in developing applications, optimizing code, and working with various frameworks to deliver high-quality software solutions. My technical toolkit includes experience with Java SE, Java EE, Spring Boot, and RESTful services, allowing me to create versatile and efficient solutions that meet client needs.
+                    
+                    In addition to my backend development skills, I am also passionate about Front-End Web Design. I have developed a strong proficiency in HTML, CSS, and JavaScript, enabling me to create clean, user-friendly, and responsive websites. I take pride in designing visually appealing and intuitive user interfaces that enhance the user experience. Through my work on several web projects, I've honed my ability to combine aesthetic design with functional development, ensuring seamless, interactive websites that deliver a positive impact.
+                    
+                    As a Continuous Learner, I am always eager to explore new technologies and expand my knowledge. I am excited about the future of software development and web design and look forward to continuing to contribute to innovative projects that solve real-world problems.
+                    
+                    </p>
+            </section>
+            <section class="section2">
+                <img src="circlepic.jpg" width="100%" height="100%" alt="img">
+            </section>
+        </div>
+        <section class="section3">
+            <div class="linktext">Get in touch by</div>
+            <div class="logos">
+                <a href="https://www.facebook.com/share/15pd5QYNFg/" id="p"><img src="facebook_2504903.png" alt="Facebook"></a>
+                <a href="https://www.linkedin.com/in/abdul-fattah-b79860235/" id="p"><img src="linkedin_2504923.png" alt="linkedin"></a>
+                <a href="https://www.github_536452.com/" id="p"><img src="github_536452.png" alt="github"></a>
+            </div>
+        </section>
+  
+<br><br><br><br><br><br>
+
+<!-- my skills  section -->
+ <div id="skills">
+<h1 class="h11">My Skills</h1>
+
+    <div class="skills-container">
+
+        <div class="skill">
+            <img src="html.png" alt="Skill Icon">
+            <h3>HTML</h3>
+            <p>Expert in creating structured web pages.</p>
+            <p class="description">HTML is the standard markup language for creating web pages. It provides the basic structure of sites.</p>
+            <div class="status-bar">
+                <div class="status" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="css.png" alt="Skill Icon">
+            <h3>CSS</h3>
+            <p>Skilled in styling and layout design.</p>
+            <p class="description">CSS is used to control the style and layout of web pages. It allows for responsive design and visual enhancements.</p>
+            <div class="status-bar">
+                <div class="status" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="js.png" alt="Skill Icon">
+            <h3>JavaScript</h3>
+            <p>Proficient in dynamic web development.</p>
+            <p class="description">JavaScript is a programming language that enables interactive web pages. It is an essential part of web applications.</p>
+            <div class="status-bar">
+                <div class="status" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="java.png" alt="Skill Icon">
+            <h3>Java</h3>
+            <p>Experienced in Java programming.</p>
+            <p class="description">Java is a versatile programming language used for building enterprise-level applications and Android apps.</p>
+            <div class="status-bar">
+                <div class="status" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="jdbc.png" alt="Skill Icon">
+            <h3>JDBC</h3>
+            <p>Skilled in database connectivity.</p>
+            <p class="description">JDBC (Java Database Connectivity) is an API for connecting and executing queries with databases in Java.</p>
+            <div class="status-bar">
+                <div class="status" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="sql.png" alt="Skill Icon">
+            <h3>MySQL</h3>
+            <p>Proficient in database management.</p>
+            <p class="description">MySQL is an open-source relational database management system that is widely used for web applications.</p>
+            <div class="status-bar">
+                <div class="status" style="width: 85%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="servelet.png" alt="Skill Icon">
+            <h3>Servlet</h3>
+            <p>Experienced in Java Servlets.</p>
+            <p class="description">Java Servlets are server-side components that handle requests and responses in web applications.</p>
+            <div class="status-bar">
+                <div class="status" style="width: 80%;"></div>
+            </div>
+        </div>
+        <!-- <div class="skill">
+            <img src="linkedin_2504923.png" alt="Skill Icon">
+            <h3>JSP</h3>
+            <p>Skilled in JavaServer Pages.</p>
+            <p class="description">JSP is a technology that helps create dynamically generated web pages based on HTML, XML, or other document types.</p>
+            <div class="status-bar">
+                <div class="status" style="width: 90%;"></div>
+            </div>
+        </div> -->
+        <div class="skill">
+            <img src="collection.png" alt="Skill Icon">
+            <h3>Collections</h3>
+            <p>Proficient in Java Collections Framework.</p>
+            <p class="description">The Collections Framework provides a set of classes and interfaces for storing and manipulating groups of data.</p>
+            <div class="status-bar">
+                <div class="status" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="springboot.png" alt="Skill Icon">
+            <h3>Spring Boot</h3>
+            <p>Experienced in building Spring applications.</p>
+            <p class="description">Spring Boot simplifies the development of new Spring applications through convention over configuration.</p>
+            <div class="status-bar">
+                <div class="status" style="width: 70%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="frontend.jpeg" alt="Skill Icon">
+            <h3>Frontend Development</h3>
+            <p>Skilled in HTML, CSS, and JavaScript.</p>
+            <p class="description">Frontend development involves creating the visual elements of a website that users interact with.</p>
+            <div class="status-bar">
+                <div class="status" style="width: 90%;"></div>
+            </div>
+        </div>
+    </div>
+ </div>
+<br><br><br><br>
+
+
+
+<!-- project section html page -->
+<div class="project-section" id="projects">
+    <h1 class="h11">My Projects</h1>
+    <!-- <br><br> -->
+    <div class="project-card">
+        <img src="islamic1.jpg" alt="Project 1">
+        <div class="project-info">
+            <h2>Simple Static Webpage</h2>
+            <p>This is my mini project about the satic page , used in portfolio</p>
+            <br><br>
+            <a href="C:\Users\Admin\Desktop\cssadding\htmlelements.html" class="project-btn">View Project</a>
+        </div>
+    </div>
+    <div class="project-card">
+        <img src="islamic5.jpg" alt="Project 2">
+        <div class="project-info">
+            <h2>Animation Game</h2>
+            <p>This is  a mini project in which a box is rotationg and changing colors</p>
+            <br><br>
+            <a href="C:\Users\Admin\Desktop\Html_ExternalCssCombine\animation.html" class="project-btn">View Project</a>
+        </div>
+    </div>
+    <!-- <div class="project-card">
+        <img src="carr.jpg" alt="Project 3">
+        <div class="project-info">
+            <h2>Project 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            <a href="C:\Users\Admin\Desktop\HtmlFllcourse\MiniProjectHtml.html" class="project-btn">View Project</a>
+        </div>
+    </div> -->
+</div>
+<br><br><br>
+
+
+<!-- contact information html code -->
+<h1 class="h11">Contact Me</h1>
+<br><br>
+<section class="container" id="contact">
+    
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p><i class="fas fa-phone"></i> <b> Mobile Number         :   </b> +92 3233749550</p>
+        <p><i class="fas fa-envelope"></i>  <b> Gmail Address      :  </b> abdulfattah1123mojai@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> <b> Home Address      :  </b>  Karachi, Pakistan</p>
+    </div>
+    <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+
+</body>
+
+
+</html>
